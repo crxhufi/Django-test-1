@@ -1,10 +1,11 @@
 from django.shortcuts import render, redirect
-from urllib.parse import unquote
 from .models import QR
-from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
 
 # Create your views here.
 
+@login_required
 def home(request):
     qrs = QR.objects.all()
     context = {
@@ -12,6 +13,10 @@ def home(request):
     }
 
     return render(request, 'index.html', context=context)
+
+def log_out(request):
+    logout(request)
+    return redirect('/')
 
 
 

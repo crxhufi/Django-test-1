@@ -6,4 +6,5 @@ from django.conf import settings
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('log_out/', views.log_out, name="log_out")
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

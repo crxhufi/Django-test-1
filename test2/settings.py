@@ -130,4 +130,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'qr')
 
 MEDIA_URL = '/qr/'
 
+LOGIN_REDIRECT_URL = '/'
+
 

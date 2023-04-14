@@ -2,9 +2,9 @@
 
 Requisitos para el funcionamiento de la pagina:
 
-Version mas reciente de Python
-Version mas reciende de Django
-SO: Linux(Ubuntu)
+- Version mas reciente de Python
+- Version mas reciende de Django
+- SO: Linux(Ubuntu)
 
 
 Podemos utilizar este comando en la terminal (abrimos la terminal con las teclas Control+Alt+T) para instalar python:
